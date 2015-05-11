@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Helvetica Neue Condensed';
+    src: url('../fonts/HelveticaNeue-Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url('../fonts/HelveticaNeue-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/HelveticaNeue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa Regular';
+    src: url('../fonts/NexaRegular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('../fonts/NexaBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a, body, html{
+    font-family: 'Helvetica Neue Regular', 'Helvetica Neue',Helvetica,sans-serif;
+}
+body{
+	background-color:black;
+}
+a {
+	text-decoration: none;
+}
+
+a{
+color:#4b4b4b;
+}
+a:hover{
+color:#000066;
+}
+.blue-text{
+color:#0099FF;
+}
+
+
+.border {
+	border: 1px solid #000000;
+}

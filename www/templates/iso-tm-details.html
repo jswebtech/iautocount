@@ -1,0 +1,28 @@
+<ion-view title="Incoming Sales Order- This Month"><ion-nav-bar class="bar-energized">
+          
+          
+          <ion-nav-back-button class="button-clear">
+            <i class="ion-arrow-left-a"></i>
+          </ion-nav-back-button>
+          
+          <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+          </ion-nav-buttons>
+          
+</ion-nav-bar>
+<ion-content class="has-header" >
+
+   <ion-list class="item-icon-right">
+  		<ion-item ng-repeat="item in salesrow" href="#/app/isotmpdf/{{item.DocKey}}">
+         <!--http://tmcs.no-ip.info:83/iAutoCount/AgingReport/SO-15e43ef6-967c-4061-8cc0-fce215ac0c08.pdf-->
+        <strong>{{item.DebtorName}}</strong><br />
+        
+        <p><strong>Amt: {{item.Amount}}</span></strong></p>
+        
+         <i class="icon ion-chevron-right icon-accessory"></i>
+		</ion-item>
+         
+      </ion-list>
+  </ion-content>
+  
+</ion-view>

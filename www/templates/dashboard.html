@@ -1,0 +1,110 @@
+<ion-view title="DashBoard">
+<ion-nav-bar class="bar-energized" animation="nav-title-slide-ios7">
+
+<ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  
+  
+  </ion-nav-bar>
+
+
+  
+  
+
+<ion-content class="has-header">
+  
+    
+<div class="list">
+
+  <div class="item item-divider" style="text-align:center;">
+    Incoming Sales Order
+  </div>
+
+  <ul class="item">
+  <a  href="#/app/isotm">
+    <i class="icon ion-arrow-down-a"></i>This Month
+    </a>
+    <li style="text-align:right;">RM{{dashrow.ThisMonthSO}}</li>
+</ul>
+  
+  
+  <ul class="item">
+  <a  href="#/app/isolm">
+    <i class="icon ion-arrow-up-a"></i>Last Month
+    </a>
+    <li style="text-align:right;">RM{{dashrow.LastMonthSO}}</li>
+</ul>
+  
+
+</div>
+<div class="item item-divider" style="text-align:center;">
+   Sales Performance
+  </div>
+
+ <ul class="item">
+  <a  href="#/app/sptm">
+    <i class="icon ion-arrow-down-a"></i>This Month
+    </a>
+    <li style="text-align:right;">RM{{dashrow.ThisMonthSalesAmount}}</li>
+</ul>
+  
+  
+  <ul class="item">
+  <a  href="#/app/splm">
+    <i class="icon ion-arrow-up-a"></i>Last Month
+    </a>
+    <li style="text-align:right;">RM{{dashrow.LastMonthSalesAmount}}</li>
+</ul>
+  
+
+
+</div>
+
+<div class="item item-divider" style="text-align:center;">
+   Pos Sales
+  </div>
+
+<ul class="item">
+  <a  href="#/app/pstm">
+    <i class="icon ion-arrow-down-a"></i>This Month
+    </a>
+    <li style="text-align:right;">RM{{dashrow.ThisMonthPOS}}</li>
+</ul>
+  
+  
+  <ul class="item">
+   <a  href="#/app/pslm">
+    <i class="icon ion-arrow-up-a"></i>Last Month
+    </a>
+    <li style="text-align:right;">RM{{dashrow.LastMonthPOS}}</li>
+</ul>
+  
+
+
+</div><div class="item item-divider" style="text-align:center;">
+   Monthly Collection
+  </div>
+
+<ul class="item">
+ <a  href="#/app/mctm">
+    <i class="icon ion-arrow-down-a"></i>This Month
+    </a>
+    <li style="text-align:right;">RM{{dashrow.ThisMonthCollection}}</li>
+</ul>
+  
+  
+  <ul class="item">
+ <a  href="#/app/mclm">
+    <i class="icon ion-arrow-up-a"></i>Last Month
+    </a>
+    <li style="text-align:right;">RM{{dashrow.LastMonthCollection}}</li>
+</ul>
+  
+
+
+</div>
+
+            
+  </ion-content>
+</ion-view>

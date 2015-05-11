@@ -1,0 +1,39 @@
+<ion-view title="Debtor Listing">
+<ion-nav-bar class="bar-energized" animation="nav-title-slide-ios7">
+  </ion-nav-bar>
+  
+  <ion-nav-bar class="bar-energized">
+          <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+          </ion-nav-buttons>
+          
+</ion-nav-bar>
+<div class="bar bar-subheader item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios7-search placeholder-icon"></i>
+            <input id="searchKey" type="search" placeholder="Search Company Name" ng-model="search" autocorrect="on" >
+        </label>
+        
+    </div>
+  
+  
+  
+ <ion-content class="has-subheader">
+<ion-refresher on-refresh="doRefresh()" pulling-text="Pull to refresh..."></ion-refresher>
+   <ion-list class="item-icon-right">
+  		<ion-item ng-repeat="item in debtrow.DebtorSynchronizationResult | filter:search | orderBy:'CompanyName'" href="#/app/debtor/{{debtrow.DebtorSynchronizationResult.indexOf(item)}}">
+        <strong>{{item.CompanyName}}</strong><br />
+        <p>{{item.Phone1}}&nbsp;&nbsp;&nbsp;&nbsp;{{item.Fax1}}</p>
+        <p><strong>Outstanding Amt: <span style="color:#FF0000">MYR{{item.OutstandingBal}}</span></strong></p>
+        
+         <i class="icon ion-chevron-right icon-accessory"></i>
+		</ion-item>
+         
+      </ion-list>
+      
+      <ion-infinite-scroll ng-if="moreDataCanBeLoaded()" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+  
+  </ion-content>
+  
+  
+</ion-view>

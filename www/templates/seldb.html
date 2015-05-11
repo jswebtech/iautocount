@@ -1,0 +1,30 @@
+<ion-view title="DashBoard">
+<ion-nav-bar class="bar-energized" animation="nav-title-slide-ios7">
+
+<ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  
+  
+  </ion-nav-bar>
+
+  
+  <ion-content class="has-header">
+    <h1 style="text-align:center">Please Select Database</h1>
+ 
+  		<ion-item ng-repeat="item in dbrow" href="#/app/debtor/{{debtrow.indexOf(item)}}">
+       
+        <label class="item item-radio">
+    <input type="radio" name="group">
+    <div class="item-content">
+      {{item.DataBase}}
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+		</ion-item>
+         
+     <a href="#/app/selprofile"><button class="button button-calm center">Next</button></a>
+  </ion-content>
+
+
+</ion-view>
